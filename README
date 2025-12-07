@@ -1,0 +1,27 @@
+Module 20 assignment
+
+Introduction
+
+In order to build up my dataset, I used a set of 10K+ pictures of people showing 2 different faces: Happy and Sad.
+This set of pictures were preprocessed by resizing them to 48x48MP and removing the colors.
+
+Exploratory Data Analysis
+
+To manage these pictures, I created a dataframe with the pictures files paths and the corresponding labels.
+In order to start analyzing the data, I revised the class balance and found out that the amount of pictures per label were similar, being 5K+ pictures for each label.
+Now, since pictures contain information for 3 different colors  (Red, Green, Blue), I researched about how to visualize the colors distribution and it was found that the only color in the images is the blue,
+which makes sense taking into account these are black and white pictures.
+Also, some visual samples are pulled in order to perform a visual inspection to see how different those 2 faces look.
+Utilizing the feature descriptor Histogram of Oriented Gradients, I got the HOG features to generate the data to be used for training the model.
+After scaling the and transforming the data, I used a Random Forest model to predict the class of each picture.
+Once the training and the validation was completed, I evaluated the precision for this model, as well as the confusion matrix.
+The precision for both classes resulted as: 0.82 for Happy and 0.75 for Sad, which makes the average precision for the model to be 0.79,
+which is very close to the threshold of 0.80, to be considered as a strong model.
+
+Next Steps.
+
+More feature engineering is needed in order to improve the overall precision of the model, but I would confidently call it a 'strong
+mode' given that prediction is basically 0.80 and also because when I visually inspected the pictures, even for a human eye, some show faces that look ambiguous
+and it is not clear at first sight what emotion it represents.
+
+Additionally, it is crucial to experiment with neuronal networks, in order to see how different it performs from other classification models.
