@@ -25,3 +25,9 @@ mode' given that prediction is basically 0.80 and also because when I visually i
 and it is not clear at first sight what emotion it represents.
 
 Additionally, it is crucial to experiment with neuronal networks, in order to see how different it performs from other classification models.
+
+Conclusion
+Using standarized data, it seems it is easy for models identify the emotion representedk, but there is still room for  improvement that I will be working on impletment in the next modules.
+
+Link to the Jupyter notebook
+https://drive.google.com/drive/folders/1vgstwgHdSLw4YkF9vQPQbXtzgxJVOEy9?usp=sharing
